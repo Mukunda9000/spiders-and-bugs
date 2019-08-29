@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Flask app</title>
+    </head>
+	<body>
+		<script type='text/javascript' src='bug-min.js'></script>
+		<script type='text/javascript'>
+			// default fruit fly bug:
+			new BugController({
+			});
+			// default spiders:
+			new SpiderController({
+			});
+		</script>
+		<h1> Here is a interesting quote for you:</h1>
+
+		<h3>"When you see a good move, look for a better one. - Mr.Robot"</h3>
+		<img src="https://pmcdeadline2.files.wordpress.com/2019/08/mrrobot_s4_key_art_final_-1-e1566934598188.jpg?w=681&h=383&crop=1">
+	<div>
+	<button> Click here</button>
+	
+	<style>h1 {
+		color: pink;
+	  }
+	  button{
+		border: 2px #34495e;
+		background-color: skyblue;
+	  }
+	
+	  
+	</style>
+	
+	<script>
+	document.querySelector("button").addEventListener("click",function(){
+		document.body.style.background = randColor();
+	  })
+	  function randColor(){
+		return '#' + (function co(lor) { return( lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f']
+	  [Math.floor(Math.random()*16)])
+		&& (lor.length == 6) ? lor: co(lor); })(''); 
+	  }
+	  </script>
+	</div>
+	
+	<script type="text/javascript">
+	
+	function setbackground()
+	{
+	window.setTimeout( "setbackground()", 500); 
+	
+	var index = Math.round(Math.random() * 9);
+	
+	var ColorValue = "FFFFFF"; // default color - white (index = 0)
+	
+	if(index == 1)
+	ColorValue = "FFCCCC"; //peach
+	if(index == 2)
+	ColorValue = "CCAFFF"; //violet
+	if(index == 3)
+	ColorValue = "A6BEFF"; //lt blue
+	if(index == 4)
+	ColorValue = "99FFFF"; //cyan
+	if(index == 5)
+	 ColorValue = "D5CCBB"; //tan
+	if(index == 6)
+	ColorValue = "99FF99"; //lt green
+	if(index == 7)
+	ColorValue = "FFFF99"; //lt yellow
+	if(index == 8)
+	ColorValue = "FFCC99"; //lt orange
+	if(index == 9)
+	ColorValue = "CCCCCC"; //lt grey
+	
+	document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+	
+	}
+	</script>
+	<body onload="setbackground();">
+	
+	</body>
+</html>
+
